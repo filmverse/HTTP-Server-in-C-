@@ -21,6 +21,8 @@ int main(){
     cout << "Enter your age" << endl;
     cin >> userAge;
 
+    // Whenever using getline after cin always use it like this "getline(cin >> ws, name);" because getline() function does not ignore leading white space characters.
+
     cout << "User first name is " << userFirstName << " and last name is " << userLastName << ". Good. \nUser age is " << userAge << " very good. \nUser favourite color is " << myColor << ". Nice, good job." << endl;
     return 0;
 }
