@@ -15,10 +15,12 @@ int main(){
     cout << "Enter your last name \n";
     getline(cin, userLastName);
 
+    cout << "Also enter your favorite color" << std::endl;
+    getline(cin, myColor);
+    
     cout << "Enter your age" << endl;
-
     cin >> userAge;
 
-    cout << "User first name is " << userFirstName << " and last name is " << userLastName << ". Good. \n User age is " << userAge << " very good" << endl;
+    cout << "User first name is " << userFirstName << " and last name is " << userLastName << ". Good. \nUser age is " << userAge << " very good. \nUser favourite color is " << myColor << ". Nice, good job." << endl;
     return 0;
 }
