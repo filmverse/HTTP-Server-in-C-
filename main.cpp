@@ -1,37 +1,21 @@
-// main.cpp
-
-// learning C++ programming.
-
-// These comments are added on Feberuary 8, 2025.
-
-// This program is to take input from the user and display it back to the user.
-
-
 #include <iostream>
-#include <string>
-
 using namespace std;
 
-int main(){
-    string myColor;
-    string userFirstName;
-    string userLastName;
-    int userAge;
+int main() {
+    int life = 4;
 
-    cout << "Enter your first name \n";
-    getline(cin, userFirstName);
+    int card;
+    card = 40;
+    int my_card = card;
 
-    cout << "Enter your last name \n";
-    getline(cin, userLastName);
+    int *myp;
+    myp = &card;
 
-    cout << "Also enter your favorite color" << std::endl;
-    getline(cin, myColor);
-    
-    cout << "Enter your age" << endl;
-    cin >> userAge;
+    my_card = *myp;
 
-    // Whenever using getline after cin always use it like this "getline(cin >> ws, name);" because "getline()" function does not ignore leading white space characters.
+    printf("Value of card is: %d\n", my_card);
+    printf("Value of card is: %p\n", myp);
+    printf("Value of card is: %d\n", my_card);
 
-    cout << "User first name is " << userFirstName << " and last name is " << userLastName << " \nUser age is " << userAge << " \nUser favourite color is " << myColor << ". Nice good job" << endl;
     return 0;
 }
