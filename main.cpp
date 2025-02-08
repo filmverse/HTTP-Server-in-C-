@@ -1,5 +1,3 @@
-
-
 // main.cpp
 
 // learning C++ programming.
@@ -7,8 +5,6 @@
 // These comments are added on Feberuary 8, 2025.
 
 // This program is to take input from the user and display it back to the user.
-
-
 
 
 #include <iostream>
