@@ -2,20 +2,19 @@
 using namespace std;
 
 int main() {
-    int life = 4;
 
-    int card;
-    card = 40;
-    int my_card = card;
 
-    int *myp;
-    myp = &card;
+    int score = 200;
+    int *myp = &score;
 
-    my_card = *myp;
+    printf("Value of score is %d\n", score);
+    printf("Value of pointer is %p\n", myp);
 
-    printf("Value of card is: %d\n", my_card);
-    printf("Value of card is: %p\n", myp);
-    printf("Value of card is: %d\n", my_card);
+    int &another_score = score;
+    another_score = 800;
+
+    printf("Value of score is %d\n", score);
+    printf("Value of pointer is %p\n", myp);
 
     return 0;
 }
