@@ -2,19 +2,9 @@
 using namespace std;
 
 int main() {
+    int  integer_array[4] = {1, 2, 3, 4};
 
-
-    int score = 200;
-    int *myp = &score;
-
-    printf("Value of score is %d\n", score);
-    printf("Value of pointer is %p\n", myp);
-
-    int &another_score = score;
-    another_score = 800;
-
-    printf("Value of score is %d\n", score);
-    printf("Value of pointer is %p\n", myp);
+    cout << integer_array << endl;
 
     return 0;
 }
